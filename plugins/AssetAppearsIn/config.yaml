@@ -1,0 +1,9 @@
+name: Asset Appears in...
+id: AssetAppearsIn
+description: <__trans phrase="Show Appears in... column in Asset Listing Screen.">
+version: 1.00
+applications:
+    cms:
+        callbacks:
+            MT::App::CMS::template_source.asset_table: $AssetAppearsIn::AssetAppearsIn::CMS::asset_table
+            app_pre_listing_list_asset: $AssetAppearsIn::AssetAppearsIn::CMS::list_asset
