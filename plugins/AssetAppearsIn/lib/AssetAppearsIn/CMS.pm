@@ -114,9 +114,9 @@ sub list_asset {
         }
         if (4 == @appears_in) {    
             pop @appears_in;
-            $param->{appears_in_more} = 1;
+            $row->{appears_in_more} = 1;
         }
-        $param->{appears_in} = \@appears_in if @appears_in;
+        $row->{appears_in} = \@appears_in if @appears_in;
 ### New <
 
         my $ts = $obj->created_on;
